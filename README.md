@@ -13,3 +13,28 @@
 git clone https://github.com/katrinnaya/bank_transaction_analysis.git
 cd bank_transaction_analysis
 ```
+3. Создайте виртуальную среду и установите зависимости:
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+4. Запустите сервисы Kafka, Zookeeper и Kafdrop с помощью Docker Compose:
+```
+docker-compose up -d
+```
+5. Сгенерируйте тестовые данные, запустив скрипт generate_data.py
+```
+python3 generate_data.py
+```
+6. Запустите скрипт для обработки данных process_data.py
+```
+python3 process_data.py
+```
+7. Просмотрите состояние Kafka-топиков и сообщений с помощью Kafdrop, зайдя по адресу http://localhost:9000. 
+
+## Проверка результатов
+Вы можете просматривать логи консолей, чтобы следить за процессом генерации и обработки транзакций. Также можно проверять содержимое базы данных SQLite с помощью команды:
+```
+sqlite3 clients.db
+```
