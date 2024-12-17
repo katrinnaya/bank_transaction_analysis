@@ -9,5 +9,7 @@
 ## Установка и запуск
 1. Установите Docker и Docker Compose на вашу машину
 2. Клонируйте репозиторий:
-``` git clone https://github.com/katrinnaya/bank_transaction_analysis.git
-cd bank_transaction_analysis ```
+```
+git clone https://github.com/katrinnaya/bank_transaction_analysis.git
+cd bank_transaction_analysis
+```
