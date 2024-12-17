@@ -6,3 +6,8 @@
 - ``` process_data.py ``` : Скрипт-потребитель, который получает транзакции из Kafka, проверяет их на подозрительность и сохраняет результаты в базу данных SQLite.
 - ``` clients.db ``` : Файл базы данных SQLite, содержащий информацию о клиентах.
 - ``` requirements.txt ```: Список необходимых библиотек для установки через pip.
+## Установка и запуск
+1. Установите Docker и Docker Compose на вашу машину
+2. Клонируйте репозиторий:
+``` git clone https://github.com/katrinnaya/bank_transaction_analysis.git
+cd bank_transaction_analysis ```
